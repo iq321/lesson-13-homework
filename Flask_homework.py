@@ -45,7 +45,7 @@ def update_user():
                       mimetype='application/json')
    
     pickle_in = open('data.pickle', 'rb')
-        data_new = pickle.load(pickle_in)
+    data_new = pickle.load(pickle_in)
     [{'id': 1, 'name': '123'}, {'id': 1, 'name': '321'}]
     for user in data_new:
         if user['id'] == data['id']:
